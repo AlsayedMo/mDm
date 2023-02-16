@@ -1,3 +1,4 @@
+
 const body = document.querySelector("body"),
       nav = document.querySelector("nav"),
       cartToggle = document.querySelector(".cartToggle"),

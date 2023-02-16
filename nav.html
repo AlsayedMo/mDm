@@ -8,6 +8,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="nav.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
      <!-- ===== Boxicons CSS ===== -->
      <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -17,13 +21,14 @@
             <i class='bx bx-menu sidebarOpen' ></i>
             <span class="logo navLogo"><a href="#"> <img src="img/logo.png" alt="mDm"></a></span>
 
-            <div class="menu">
+            <div class="menu sidebarOpen">
                 <div class="logo-toggle">
                     <span class="logo"><a href="#"> <img src="img/logo.png" alt="mDm"></a></span>
                     <i class='bx bx-x siderbarClose'></i>
                 </div>
 
                 <ul class="nav-links">
+                    <span class="logo"><a href="#"> <img src="img/logo.png" alt="mDm"></a></span>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">product</a></li>
@@ -46,7 +51,33 @@
             </div>
         </div>
     </nav>
+    <div class="slideshow-container">
 
+      <div class="mySlides mo">
+        <div class="numbertext">1 / 3</div>
+        <img src="case1.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides mo">
+        <div class="numbertext">2 / 3</div>
+        <img src="case1.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides mo">
+        <div class="numbertext">3 / 3</div>
+        <img src="case1.jpg" style="width:100%">>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+    </div>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    <script src="js.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
